@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.438
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Religious-One", "Religious-One\", "{53BF1BA0-F3FE-41E7-8940-D9B71DCABEC5}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_52117"
+		Debug.AspNetCompiler.PhysicalPath = "Religious-One\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52117\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_52117"
+		Release.AspNetCompiler.PhysicalPath = "Religious-One\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52117\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "52117"
+		SlnRelativePath = "Religious-One\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53BF1BA0-F3FE-41E7-8940-D9B71DCABEC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53BF1BA0-F3FE-41E7-8940-D9B71DCABEC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {332515A3-ED50-4159-B46F-06F9439BF077}
+	EndGlobalSection
+EndGlobal
