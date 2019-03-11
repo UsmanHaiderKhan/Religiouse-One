@@ -1,0 +1,1039 @@
+﻿/*================================= 
+        Font-Family's Start
+  =================================*/
+@font-face {
+    font-family: 'Fontyou_Coco.FY';
+    src: url('../../Fonts/Fontyou_Coco.FY.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MinionPro-Regular';
+    src: url('../../Fonts/MinionPro-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'NassimLatn-Me';
+    src: url('../../Fonts/NassimLatn-Me.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'NassimLatn-Bd';
+    src: url('../../Fonts/NassimLatn-Bd.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'NassimLatn-Sb';
+    src: url('../../Fonts/NassimLatn-Sb.otf') format('opentype');
+}
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Noto Serif', serif;
+font-family: 'Lato', sans-serif;
+
+*/
+
+/*================================= 
+        Font-Family's End
+  =================================*/
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+}
+/*================================= 
+    Navbar Section Styling
+  =================================*/
+
+
+.sleep {
+    padding: 15px 100px 15px 100px;
+    transition: all .4s ease-in-out;
+}
+
+.easy-nav-on-scroll {
+    margin-top: 0;
+    transition: all 0.6s ease-in-out;
+}
+
+.nav-item {
+    position: relative;
+    padding: 45px 35px;
+}
+
+.banner-content {
+    width: 100%;
+}
+
+.nav-trans {
+    transition: padding 400ms linear;
+}
+
+#home {
+    padding: 5px 0 85px 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.banner-text {
+    padding: 125px 0 500px 0;
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.51);
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.18;
+    font-family: 'Nazir';
+}
+
+#home .active {
+    color: rgb(253, 202, 3) !important;
+    font-family: 'NassimLatn-Me';
+}
+
+#home .navbar-light .navbar-nav .nav-link {
+    color: #fdfdfd;
+    font-size: 26px;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: 'NassimLatn-Me';
+}
+
+
+    #home .navbar-light .navbar-nav .nav-link.scrolled {
+        color: #6c6c6c;
+        font-weight: 600;
+        font-size: 22px;
+        text-decoration: none;
+        background-color: transparent;
+        transition: font-size 400ms linear;
+        font-family: 'NassimLatn-Me';
+    }
+
+.chirst-text {
+    font-size: 46px;
+    color: #ffffff;
+    font-family: 'Fontyou_Coco.FY';
+}
+
+.always-text {
+    font-size: 24px;
+    color: #ffffff;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    font-family: 'NassimLatn-Sb';
+}
+
+.g-text {
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.g-color {
+    color: #fdca03;
+}
+
+.banner-pera-text {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'NassimLatn-Me';
+}
+
+.btn-join {
+    width: 160px;
+    height: 56px;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 40px;
+    border-radius: 0;
+    text-transform: uppercase;
+    background-color: rgb(237, 28, 67);
+    font-family: 'Noto Sans', sans-serif;
+}
+
+    .btn-join:hover {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+.below-always {
+    display: inline-block;
+    position: relative;
+}
+
+    .below-always:after {
+        content: "";
+        position: absolute;
+        height: 8px;
+        border-bottom: 2px solid white;
+        border-top: 2px solid white;
+        top: 12px;
+        right: -190px;
+        width: 41%;
+    }
+
+    .below-always:before {
+        content: "";
+        position: absolute;
+        height: 8px;
+        border-bottom: 2px solid white;
+        border-top: 2px solid white;
+        top: 12px;
+        left: -210px;
+        width: 41%;
+    }
+
+.owl-carousel .owl-item img {
+    margin-left: 44%;
+    width: auto;
+}
+
+#home .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #fdca03;
+}
+
+#home .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    width: 30px;
+    height: 7px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    border-radius: 0px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 30px;
+    height: 7px;
+    background: #8c7b3a;
+}
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: 30px;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+/*================================= 
+    Below Home Section Styling
+  =================================*/
+.qoutes-bg-color-one {
+    background: #ee254a;
+    width: 100%;
+    padding: 50px;
+}
+
+.qoutes-heading {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.qoutes-desc {
+    color: #cfcfcf;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.qoutes-bg-color-two {
+    background: #ed1c43;
+    width: 100%;
+    padding: 50px;
+}
+
+.qoutes-bg-color-three {
+    background: #db193d;
+    width: 100%;
+    padding: 50px;
+}
+/*================================= 
+      Churuh Section Styling
+  =================================*/
+.bg-color-churuh {
+    background: #fdca03;
+    padding: 40px;
+}
+
+.church-card-heading {
+    font-size: 25px;
+    color: #525252;
+    font-family: 'NassimLatn-Me';
+}
+
+.teach-heading {
+    font-size: 24px;
+    color: #525252;
+    font-family: 'MinionPro-Regular';
+}
+
+.list-style-none {
+    list-style: none;
+}
+
+.church-padding {
+    padding: 0px 70px;
+}
+
+.about-text {
+    font-size: 30px;
+    color: #242424;
+    margin-bottom: 0;
+    font-family: 'NassimLatn-Sb';
+}
+
+.church-text {
+    color: #ed1c43;
+    font-size: 50px;
+    font-family: 'NassimLatn-Sb';
+}
+
+.mission-text {
+    color: #444444;
+    font-size: 25px;
+    font-family: 'NassimLatn-Sb';
+}
+
+.church-desc-text {
+    color: #7c7c7c;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Noto Sans', sans-serif;
+}
+/*================================= 
+    Latest Section Styling
+  =================================*/
+.latest-text {
+    color: #292929;
+    font-size: 35px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.sermons-color {
+    color: #ed1c43;
+}
+
+.latest-pera {
+    color: #7d7d7d;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.latest-bg-color {
+    width: 100%;
+    height: auto;
+    padding: 40px 30px 45px 30px;
+    background: #eef0f3;
+}
+
+.heading-text {
+    color: #ed1c43;
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.heading-pera-text {
+    color: #6a6a6a;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.address-text {
+    color: #a4a4a4;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.btn-donate {
+    color: rgb(237, 28, 67);
+    border-width: 2px;
+    border-color: rgb(237, 28, 67);
+    border-style: solid;
+    border-radius: 17px;
+    width: 125px;
+    height: 32px;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+    .btn-donate:hover {
+        text-decoration: none;
+        color: rgb(237, 28, 67);
+    }
+
+
+#icons [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+    padding: 23px;
+    margin-left: 0;
+    font-size: 21px;
+    color: #2d2303;
+    background-image: -moz-linear-gradient( 180deg, rgb(251,204,22) 0%, rgb(228,169,12) 100%);
+    background-image: -webkit-linear-gradient( 180deg, rgb(251,204,22) 0%, rgb(228,169,12) 100%);
+    background-image: -ms-linear-gradient( 180deg, rgb(251,204,22) 0%, rgb(228,169,12) 100%);
+}
+
+#time-home [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+    color: #ed1c43;
+    margin-left: 0;
+}
+
+.text-none {
+    text-decoration: none;
+}
+
+    .text-none:hover {
+        text-decoration: none;
+    }
+
+.ml-5px {
+    margin-left: -5px;
+}
+/*================================= 
+     Belive Section Styling
+  =================================*/
+.belive-bg-color {
+    padding: 85px 90px;
+    width: 100%;
+    height: auto;
+    background: #34373c;
+}
+
+.love-bg-img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.belive-text {
+    color: #ffffff;
+    font-size: 40px;
+    font-family: 'NassimLatn-Bd';
+}
+
+.below-belive {
+    display: inline-block;
+    position: relative;
+}
+
+    .below-belive:after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        border: 2px solid #ed1c43;
+        width: 20%;
+    }
+
+.belive-pera-text {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.btn-join {
+    border-width: 2px;
+    border-color: rgb(194, 194, 194);
+    opacity: 0.702;
+    border-style: solid;
+    border-radius: 28px;
+    width: 178px;
+    height: 52px;
+    line-height: 37px;
+    text-transform: uppercase;
+    background: transparent;
+    font-weight: bold;
+    font-family: 'Noto Sans', sans-serif;
+}
+/*================================= 
+    Slider Section Styling
+  =================================*/
+.slider-bg-img {
+    padding: 100px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.place-text {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.volunteer-text {
+    color: #f3c012;
+    text-transform: capitalize;
+    font-size: 55px;
+    font-weight: bold;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.below-home {
+    display: inline-block;
+    position: relative;
+}
+
+    .below-home:after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        border: 2px solid #ffffff;
+        top: 39px;
+        right: -164px;
+        width: 205%;
+    }
+
+    .below-home:before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        border: 2px solid #ffffff;
+        top: 39px;
+        left: -164px;
+        width: 205%;
+    }
+
+.slider-pera-text {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.btn-slider-join {
+    width: 220px;
+    height: 66px;
+    color: #000000;
+    background-color: rgb(243, 192, 18);
+    font-size: 25px;
+    font-weight: bold;
+    border: 0px;
+    border-radius: 0;
+    line-height: 50px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+    .btn-slider-join:hover {
+        color: #000000;
+    }
+
+.Rectangle_11 {
+    position: absolute;
+    left: 832px;
+    top: 4405px;
+    z-index: 285;
+}
+
+
+/*================================= 
+          Read More Styling
+  =================================*/
+.comments-space {
+    text-align: justify;
+}
+
+.remaining-contents span {
+    display: none;
+}
+
+
+/*=================== Custome Margins ===================*/
+.mt--180 {
+    margin-top: -180px;
+}
+
+.mt--375 {
+    margin-top: -375px;
+}
+
+.mt--55 {
+    margin-top: -55px;
+}
+
+.mt--44 {
+    margin-top: -44px;
+}
+
+.mt--9 {
+    margin-top: -9px;
+}
+
+.mt-300 {
+    margin-top: 300px;
+}
+
+.mt-290 {
+    margin-top: 290px;
+}
+
+.mt-280 {
+    margin-top: 280px;
+}
+
+.mt-270 {
+    margin-top: 270px;
+}
+
+.mt-260 {
+    margin-top: 260px;
+}
+
+.mt-250 {
+    margin-top: 250px;
+}
+
+.mt-240 {
+    margin-top: 240px;
+}
+
+.mt-230 {
+    margin-top: 230px;
+}
+
+
+.mt-200 {
+    margin-top: 200px;
+}
+
+.mt-180 {
+    margin-top: 180px;
+}
+
+.mt-150 {
+    margin-top: 150px;
+}
+
+.mt-140 {
+    margin-top: 140px;
+}
+
+.mt-120 {
+    margin-top: 120px;
+}
+
+.mt-115 {
+    margin-top: 115px;
+}
+
+.mt-110 {
+    margin-top: 110px;
+}
+
+.mt-108 {
+    margin-top: 108px;
+}
+
+.mt-106 {
+    margin-top: 106px;
+}
+
+.mt-105 {
+    margin-top: 105px;
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+.mt-99 {
+    margin-top: 99px;
+}
+
+.mt-98 {
+    margin-top: 98px;
+}
+
+.mt-97 {
+    margin-top: 97px;
+}
+
+.mt-96 {
+    margin-top: 96px;
+}
+
+.mt-95 {
+    margin-top: 95px;
+}
+
+.mt-94 {
+    margin-top: 94px;
+}
+
+.mt-93 {
+    margin-top: 93px;
+}
+
+.mt-90 {
+    margin-top: 90px;
+}
+
+.mt-89 {
+    margin-top: 89px;
+}
+
+.mt-88 {
+    margin-top: 88px;
+}
+
+.mt-87 {
+    margin-top: 87px;
+}
+
+.mt-86 {
+    margin-top: 86px;
+}
+
+.mt-85 {
+    margin-top: 85px;
+}
+
+.mt-84 {
+    margin-top: 84px;
+}
+
+.mt-83 {
+    margin-top: 83px;
+}
+
+.mt-80 {
+    margin-top: 80px;
+}
+
+.mt-75 {
+    margin-top: 75px;
+}
+
+.mt-74 {
+    margin-top: 74px;
+}
+
+.mt-73 {
+    margin-top: 73px;
+}
+
+.mt-70 {
+    margin-top: 70px;
+}
+
+.mt-65 {
+    margin-top: 65px;
+}
+
+.mt-60 {
+    margin-top: 60px;
+}
+
+.mt-55 {
+    margin-top: 55px;
+}
+
+.mt-53 {
+    margin-top: 53px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mt-49 {
+    margin-top: 49px;
+}
+
+.mt-48 {
+    margin-top: 48px;
+}
+
+.mt-47 {
+    margin-top: 47px;
+}
+
+.mt-46 {
+    margin-top: 46px;
+}
+
+.mt-45 {
+    margin-top: 45px;
+}
+
+.mt-44 {
+    margin-top: 44px;
+}
+
+.mt-43 {
+    margin-top: 43px;
+}
+
+.mt-42 {
+    margin-top: 42px;
+}
+
+.mt-41 {
+    margin-top: 41px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.mt-38 {
+    margin-top: 38px;
+}
+
+.mt-35 {
+    margin-top: 35px;
+}
+
+.mt-34 {
+    margin-top: 34px;
+}
+
+.mt-33 {
+    margin-top: 32px;
+}
+
+.mt-32 {
+    margin-top: 32px;
+}
+
+.mt-31 {
+    margin-top: 31px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-29 {
+    margin-top: 29px;
+}
+
+.mt-28 {
+    margin-top: 28px;
+}
+
+.mt-27 {
+    margin-top: 27px;
+}
+
+.mt-26 {
+    margin-top: 26px;
+}
+
+.mt-25 {
+    margin-top: 25px;
+}
+
+.mt-21 {
+    margin-top: 21px;
+}
+
+.mt-22 {
+    margin-top: 22px;
+}
+
+.mt-23 {
+    margin-top: 23px;
+}
+
+.mt-24 {
+    margin-top: 24px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-18 {
+    margin-top: 18px;
+}
+
+.mt-15 {
+    margin-top: 15px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+/*=========== Margin Bottom ===========*/
+.mb-100 {
+    margin-bottom: 100px;
+}
+
+.mb-110 {
+    margin-bottom: 110px;
+}
+
+.mb-160 {
+    margin-bottom: 160px;
+}
+
+.b-50 {
+    bottom: 50px;
+}
+
+.b-30 {
+    bottom: 30px;
+}
+/*================ Margin-Left ===================*/
+.ml-23 {
+    margin-left: 23px;
+}
+
+.ml-77 {
+    margin-left: 77%;
+}
+/*================ Padding-Top ===================*/
+.pt-120 {
+    padding-top: 120px;
+}
+
+.pt-100 {
+    padding-top: 100px;
+}
+
+
+
+/*======= Some Commen Styling ======*/
+
+
+button:focus {
+    outline: none;
+    outline: none;
+}
+
+.btn-load-more {
+    width: 213px;
+    height: 66px;
+    font-size: 18px;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 0px;
+    background-color: rgb(26, 35, 126);
+}
+
+    .btn-load-more:hover {
+        background-color: rgb(26, 35, 126);
+    }
+
+.btn-r-0 {
+    border-radius: 0px !important;
+}
+
+.btn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+:focus {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+
+.btn:focus, .btn.focus {
+    outline: 0;
+    box-shadow: none !important;
+}
+
+.display-brand {
+    display: none;
+}
+
+.fixed-top {
+    transition: all .8s ease-in-out;
+}
+
+.my-position-relative {
+    position: relative;
+}
+
+.my-position-absolute {
+    position: absolute;
+}
+
+.image-setting {
+    width: 450px;
+    height: 722px;
+}
+
+/*================ Media Query ===============*/
+@media screen and (max-width: 1500px) {
+}
+
+@media screen and (max-width: 1367px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 800px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 414px) {
+}
+
+@media screen and (max-width: 411px) {
+}
+
+@media screen and (max-width: 375px) {
+}
+
+@media screen and (max-width: 360px) {
+}
+
+
+/*==================== Media Query For Land Scape Mode =====================*/
+@media screen and (max-width: 1500px) and (orientation: landscape) {
+}
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+}
+
+@media screen and (max-width: 823px) and (orientation: landscape) {
+}
+
+@media screen and (max-width: 740px) and (orientation: landscape) {
+}
+
+@media screen and (max-width: 736px) and (orientation: landscape) {
+}
+
+@media screen and (max-width: 731px) and (orientation: landscape) {
+}
+
+@media screen and (max-width: 667px) and (orientation: landscape) {
+}
+
+@media screen and (max-width: 640px) and (orientation: landscape) {
+}
