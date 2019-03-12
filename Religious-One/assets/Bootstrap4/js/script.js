@@ -51,7 +51,7 @@ $(function () {
 $(document).ready(function () {
 
     $('.loadMore').loadMoreResults({
-        displayedItems: 9,
+        displayedItems: 3,
         showItems: 3
 
     });
@@ -63,6 +63,47 @@ $(function () {
     $("#datepicker").datepicker();
 });
 /*===================== Owl Carousel Slider ======================*/
+$(function () {
+    $('#owl-one').owlCarousel({
+        loop: false,
+        margin: 10,
+        dots: false,
+        nav: true,
+        item: 1,
+        navText: ["<i class='flaticon-left-angle-bracket'></i>", "<i class='flaticon-right-arrow-angle'></i>"],
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+                dots: true,
+                nav: false
+            },
+            400: {
+                items: 1,
+                dots: true,
+                nav: false
+            },
+            600: {
+                items: 1,
+                dots: false,
+                nav: true
+            },
+            800: {
+                items: 1,
+                dots: false,
+                nav: true
+            },
+            1000: {
+                items: 1,
+                dots: false,
+                nav: true
+            }
+        }
+    });
+});
+
+
+
 $(function () {
     $('.owl-carousel').owlCarousel({
         loop: true,
@@ -100,43 +141,7 @@ $(function () {
         }
     });
 });
-$(function () {
-    $('#owl-one').owlCarousel({
-        loop: true,
-        margin: 10,
-        dots: false,
-        nav: true,
-        item: 1,
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1,
-                dots: true,
-                nav: false
-            },
-            400: {
-                items: 1,
-                dots: true,
-                nav: false
-            },
-            600: {
-                items: 1,
-                dots: true,
-                nav: false
-            },
-            800: {
-                items: 1,
-                dots: true,
-                nav: false
-            },
-            1000: {
-                items: 1,
-                dots: true,
-                nav: false
-            }
-        }
-    });
-});
+
 /*===================== Slick Slider ======================*/
 var counters = [];
 counters = $(".counter-value");
