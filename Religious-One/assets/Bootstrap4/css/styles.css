@@ -58,11 +58,20 @@ html, body {
 /*================================= 
     Navbar Section Styling
   =================================*/
+.nav-bg-color {
+    background: #000000;
+}
 
+.scroll-logo-width {
+    width: 45% !important;
+}
 
-.sleep {
+/*.sleep {
     padding: 15px 100px 15px 100px;
     transition: all .4s ease-in-out;
+}*/
+.nav-setting-on-scroll {
+    padding: 13px 26px !important;
 }
 
 .easy-nav-on-scroll {
@@ -267,7 +276,7 @@ html, body {
 .qoutes-bg-color-one {
     background: #ee254a;
     width: 100%;
-    padding: 50px;
+    padding: 50px 8px 50px 93px;
 }
 
 .qoutes-heading {
@@ -294,7 +303,7 @@ html, body {
 .qoutes-bg-color-three {
     background: #db193d;
     width: 100%;
-    padding: 50px;
+    padding: 50px 65px 50px 10px;
 }
 /*================================= 
       Churuh Section Styling
@@ -380,15 +389,19 @@ html, body {
 
 .heading-text {
     color: #ed1c43;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 900;
     text-transform: uppercase;
     font-family: 'Noto Sans', sans-serif;
 }
 
+.img-height {
+    height: 447px;
+}
+
 .heading-pera-text {
     color: #6a6a6a;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 500;
     font-family: 'Noto Sans', sans-serif;
 }
@@ -561,7 +574,7 @@ html, body {
 
 .slider-pera-text {
     color: #ffffff;
-    font-size: 22px;
+    font-size: 19px;
     font-weight: 600;
     font-family: 'Noto Sans', sans-serif;
 }
@@ -667,6 +680,7 @@ html, body {
     .speaker-card:hover {
         background: #fdca03;
         border: 2px solid #000000;
+        transition: all 0.5s ease-in-out;
     }
 
 .card-link {
@@ -845,7 +859,7 @@ html, body {
 
 .footer-text {
     color: #ffffff;
-    font-size: 21px;
+    font-size: 20px;
     font-family: 'HelveticaNeueLTPro-Md';
 }
 
@@ -858,7 +872,7 @@ html, body {
     }
 
 .bz-text {
-    font-size: 23px;
+    font-size: 22px;
     font-family: 'HelveticaNeueLTPro-Bd';
 }
 /*================================= 
@@ -1282,7 +1296,7 @@ button:focus {
 }
 
 .fixed-top {
-    transition: all .8s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 
 .my-position-relative {
@@ -1300,30 +1314,978 @@ button:focus {
 
 /*================ Media Query ===============*/
 @media screen and (max-width: 1500px) {
+    .img-height-13h {
+        height: 447px;
+    }
+
+    .contact-us-bg-color {
+        background: #f5d76e;
+        padding: 110px 60px 110px 180px;
+    }
 }
 
 @media screen and (max-width: 1367px) {
+    .img-height-13h {
+        height: 448px;
+    }
+
+    .contact-us-bg-color {
+        background: #f5d76e;
+        padding: 110px 60px 112px 180px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
+    .nav-item {
+        padding: 45px 29px;
+    }
+
+    .nav-setting-on-scroll {
+        padding: 10px 26px !important;
+    }
+
+    .always-text {
+        font-size: 23px;
+        letter-spacing: 11px;
+    }
+
+    .g-text {
+        font-size: 44px;
+    }
+
+    .qoutes-heading {
+        font-size: 20px;
+    }
+
+    .qoutes-bg-color-one {
+        padding: 50px 8px 50px 35px;
+    }
+
+    .qoutes-bg-color-two {
+        padding: 50px 8px 50px 35px;
+    }
+
+    .qoutes-bg-color-three {
+        padding: 50px 8px 50px 35px;
+    }
+
+    .church-text {
+        font-size: 38px;
+    }
+
+    .mt-40 {
+        margin-top: 20px;
+    }
+
+    .mission-text {
+        font-size: 22px;
+    }
+
+    .church-desc-text {
+        font-size: 17px;
+    }
+
+    .belive-bg-color {
+        padding: 51.5px 28px;
+    }
+
+    .belive-text {
+        font-size: 34px;
+    }
+
+    .below-belive {
+        display: block;
+    }
+
+        .below-belive:after {
+            content: '';
+            width: 10%;
+            top: 37px;
+            left: 0;
+        }
+
+
+
+    .latest-text {
+        font-size: 30px;
+    }
+
+    .latest-pera {
+        font-size: 17px;
+    }
+
+    #icons [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+        padding: 17.84px;
+    }
+
+    .media-img-height {
+        height: 387px;
+    }
+
+    .mt-18 {
+        margin-top: 13px;
+    }
+
+    .latest-bg-color {
+        padding: 20px 20px 25px 20px;
+    }
+
+    .heading-text {
+        font-size: 15px;
+    }
+
+    .heading-pera-text {
+        font-size: 15px;
+    }
+
+    .place-text {
+        font-size: 30px;
+    }
+
+    .volunteer-text {
+        font-size: 40px;
+    }
+
+    .slider-pera-text {
+        font-size: 17px;
+    }
+
+    .speaker-text {
+        font-size: 35px;
+    }
+
+    .speaker-color {
+        font-size: 35px;
+    }
+
+    .speaker-pera {
+        font-size: 18px;
+    }
+
+    .card-heading {
+        font-size: 22px;
+    }
+
+    .card-desc {
+        font-size: 16px;
+    }
+
+    .pastor-text {
+        font-size: 18px;
+    }
+
+    .follow-text {
+        font-size: 19px;
+        margin-top: 8px;
+    }
+
+    .call-text {
+        font-size: 21px;
+        margin-top: 2px;
+    }
+
+    .no-text {
+        font-size: 21px;
+    }
+
+    .contact-us-bg-color {
+        padding: 66px 60px 124px 55px;
+    }
+
+    .ml-5 {
+        margin-left: 1.5rem !important;
+    }
+    /*#home ul li a img .img-fluid {
+        max-width: 100%;
+    }*/
 }
 
 @media screen and (max-width: 800px) {
+    .nav-item {
+        padding: 45px 29px;
+    }
+
+    .nav-setting-on-scroll {
+        padding: 10px 26px !important;
+    }
+
+    .chirst-text {
+        font-size: 32px;
+    }
+
+    .always-text {
+        font-size: 20px;
+        letter-spacing: 6px;
+    }
+
+    .g-text {
+        font-size: 34px;
+    }
+
+    .banner-pera-text {
+        font-size: 20px;
+    }
+
+    .owl-carousel .owl-item img {
+        margin-left: 41%;
+    }
+
+    .below-always:before {
+        content: '';
+        top: 15px;
+        left: -159px;
+        width: 41%;
+    }
+
+    .below-always:after {
+        content: '';
+        top: 10px;
+        right: -159px;
+        width: 41%;
+    }
+
+    .below-always-one:before {
+        content: '';
+        top: -64px;
+        left: -51px;
+        width: 26%;
+    }
+
+    .below-always-one:after {
+        content: '';
+        top: -59px;
+        right: -51px;
+        width: 26%;
+    }
+
+
+    .qoutes-heading {
+        font-size: 15px;
+    }
+
+    .qoutes-desc {
+        font-size: 14px;
+    }
+
+    .qoutes-bg-color-one {
+        padding: 41px 12px 31px 25px;
+    }
+
+    .qoutes-bg-color-two {
+        padding: 41px 12px 31px 25px;
+    }
+
+    .qoutes-bg-color-three {
+        padding: 41px 12px 31px 15px;
+    }
+
+    .church-padding {
+        padding: 0px 32px;
+    }
+
+    .list-style-none {
+        margin-left: -40px;
+    }
+
+    .church-text {
+        font-size: 30px;
+    }
+
+    .church-desc-text {
+        font-size: 15.6px;
+    }
+
+    .church-card-heading {
+        font-size: 22px;
+    }
+
+    .teach-heading {
+        font-size: 26px;
+    }
+
+    .about-text {
+        font-size: 23px;
+    }
+
+    .mission-text {
+        font-size: 22px;
+    }
+
+    .mt-40 {
+        margin-top: 20px;
+    }
+
+    .mt-30 {
+        margin-top: 18px;
+    }
+
+    .mt-75 {
+        margin-top: 40px;
+    }
+
+    .belive-bg-color {
+        padding: 24.5px;
+    }
+
+    .belive-text {
+        font-size: 22px;
+    }
+
+    .belive-pera-text {
+        font-size: 14px;
+    }
+
+    .below-belive {
+        display: block;
+    }
+
+        .below-belive:after {
+            content: '';
+            width: 10%;
+            top: 37px;
+            left: 0;
+        }
+
+
+
+    .latest-text {
+        font-size: 26px;
+    }
+
+    .latest-pera {
+        font-size: 15px;
+    }
+
+    #icons [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+        padding: 27px 32.8px;
+    }
+
+    .media-img-height {
+        height: 387px;
+    }
+
+    .mt-18 {
+        margin-top: 13px;
+    }
+
+    .latest-bg-color {
+        padding: 32px 51px 33px 50px;
+    }
+
+    .heading-text {
+        font-size: 20px;
+    }
+
+    .heading-pera-text {
+        font-size: 16px;
+    }
+
+    .address-text {
+        font-size: 15px;
+    }
+
+    .place-text {
+        font-size: 25px;
+    }
+
+    .volunteer-text {
+        font-size: 32px;
+    }
+
+    .slider-pera-text {
+        font-size: 16px;
+    }
+
+    .btn-slider-join {
+        width: 170px;
+        height: 53px;
+        font-size: 20px;
+        line-height: 36px;
+    }
+
+    .speaker-text {
+        font-size: 32px;
+    }
+
+    .speaker-color {
+        font-size: 32px;
+    }
+
+    .speaker-pera {
+        font-size: 16px;
+    }
+
+    .card-heading {
+        font-size: 22px;
+    }
+
+    .card-desc {
+        font-size: 16px;
+    }
+
+    .pastor-text {
+        font-size: 18px;
+    }
+
+    .follow-text {
+        font-size: 16px;
+        margin-top: 4px;
+    }
+
+    .call-text {
+        font-size: 18px;
+        margin-top: 0px;
+    }
+
+    .no-text {
+        font-size: 16px;
+    }
+
+    .contact-us-bg-color {
+        padding: 20px 60px 32px 55px;
+    }
+
+    .social-bg-color {
+        padding: 31px 38px 22px 21px;
+    }
+
+    .ml-5 {
+        margin-left: .956rem !important;
+    }
 }
 
 @media screen and (max-width: 768px) {
+    .nav-item {
+        padding: 45px 29px;
+    }
+
+    .nav-setting-on-scroll {
+        padding: 10px 26px !important;
+    }
+
+    .chirst-text {
+        font-size: 32px;
+    }
+
+    .always-text {
+        font-size: 20px;
+        letter-spacing: 6px;
+    }
+
+    .g-text {
+        font-size: 34px;
+    }
+
+    .banner-pera-text {
+        font-size: 20px;
+    }
+
+    .owl-carousel .owl-item img {
+        margin-left: 41%;
+    }
+
+    .below-always:before {
+        content: '';
+        top: 15px;
+        left: -159px;
+        width: 41%;
+    }
+
+    .below-always:after {
+        content: '';
+        top: 10px;
+        right: -159px;
+        width: 41%;
+    }
+
+    .below-always-one:before {
+        content: '';
+        top: -64px;
+        left: -51px;
+        width: 26%;
+    }
+
+    .below-always-one:after {
+        content: '';
+        top: -59px;
+        right: -51px;
+        width: 26%;
+    }
+
+
+    .qoutes-heading {
+        font-size: 15px;
+    }
+
+    .qoutes-desc {
+        font-size: 14px;
+    }
+
+    .qoutes-bg-color-one {
+        padding: 41px 12px 31px 25px;
+    }
+
+    .qoutes-bg-color-two {
+        padding: 41px 12px 31px 25px;
+    }
+
+    .qoutes-bg-color-three {
+        padding: 41px 12px 31px 0px;
+    }
+
+    .church-padding {
+        padding: 0px 32px;
+    }
+
+    .list-style-none {
+        margin-left: -40px;
+    }
+
+    .church-text {
+        font-size: 30px;
+    }
+
+    .church-desc-text {
+        font-size: 15px;
+    }
+
+    .church-card-heading {
+        font-size: 21px;
+    }
+
+    .teach-heading {
+        font-size: 23px;
+    }
+
+    .about-text {
+        font-size: 23px;
+    }
+
+    .mission-text {
+        font-size: 22px;
+    }
+
+    .mt-40 {
+        margin-top: 20px;
+    }
+
+    .mt-30 {
+        margin-top: 18px;
+    }
+
+    .mt-75 {
+        margin-top: 40px;
+    }
+
+    .belive-bg-color {
+        padding: 19px;
+    }
+
+    .belive-text {
+        font-size: 22px;
+    }
+
+    .belive-pera-text {
+        font-size: 14px;
+    }
+
+    .below-belive {
+        display: block;
+    }
+
+        .below-belive:after {
+            content: '';
+            width: 10%;
+            top: 37px;
+            left: 0;
+        }
+
+
+
+    .latest-text {
+        font-size: 26px;
+    }
+
+    .latest-pera {
+        font-size: 15px;
+    }
+
+    #icons [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+        padding: 27px 31.9px;
+    }
+
+    .media-img-height {
+        height: 387px;
+    }
+
+    .mt-18 {
+        margin-top: 13px;
+    }
+
+    .latest-bg-color {
+        padding: 32px 51px 33px 50px;
+    }
+
+    .heading-text {
+        font-size: 20px;
+    }
+
+    .heading-pera-text {
+        font-size: 16px;
+    }
+
+    .address-text {
+        font-size: 15px;
+    }
+
+    .place-text {
+        font-size: 25px;
+    }
+
+    .volunteer-text {
+        font-size: 32px;
+    }
+
+    .slider-pera-text {
+        font-size: 16px;
+    }
+
+    .btn-slider-join {
+        width: 170px;
+        height: 53px;
+        font-size: 20px;
+        line-height: 36px;
+    }
+
+    .speaker-text {
+        font-size: 32px;
+    }
+
+    .speaker-color {
+        font-size: 32px;
+    }
+
+    .speaker-pera {
+        font-size: 16px;
+    }
+
+    .card-heading {
+        font-size: 22px;
+    }
+
+    .card-desc {
+        font-size: 16px;
+    }
+
+    .pastor-text {
+        font-size: 18px;
+    }
+
+    .follow-text {
+        font-size: 16px;
+        margin-top: 4px;
+    }
+
+    .call-text {
+        font-size: 18px;
+        margin-top: 0px;
+    }
+
+    .no-text {
+        font-size: 16px;
+    }
+
+    .contact-us-bg-color {
+        padding: 20px 60px 32px 55px;
+    }
+
+    .social-bg-color {
+        padding: 31px 38px 22px 21px;
+    }
+
+    .ml-5 {
+        margin-left: .956rem !important;
+    }
 }
 
 @media screen and (max-width: 414px) {
+    .pl-0 {
+        padding-left: 15px !important;
+    }
+
+    .pr-0 {
+        padding-right: 15px !important;
+    }
+
+    .nav-item {
+        padding: 45px 29px;
+    }
+
+    .nav-setting-on-scroll {
+        padding: 10px 26px !important;
+    }
+
+    .chirst-text {
+        font-size: 32px;
+    }
+
+    .always-text {
+        font-size: 20px;
+        letter-spacing: 6px;
+    }
+
+    .g-text {
+        font-size: 34px;
+    }
+
+    .banner-pera-text {
+        font-size: 20px;
+    }
+
+    .owl-carousel .owl-item img {
+        margin-left: 41%;
+    }
+
+    .below-always {
+        display: inline-block;
+        position: relative;
+    }
+
+        .below-always:after {
+            border: 0px solid white;
+        }
+
+        .below-always:before {
+            border: 0px solid white;
+            top: 9px;
+        }
+
+    .below-always-one {
+        display: inline-block;
+        position: relative;
+    }
+
+        .below-always-one:after {
+            content: "";
+            /*border-bottom: 2px solid white;*/
+            border: 0px solid white;
+        }
+
+        .below-always-one:before {
+            border: 0px solid white;
+        }
+
+
+    .qoutes-bg-color-one {
+        padding: 50px 41px 30px 40px;
+    }
+
+    .qoutes-bg-color-two {
+        padding: 41px 23px 31px 25px;
+    }
+
+    .qoutes-bg-color-three {
+        padding: 50px 41px 30px 40px;
+    }
+
+    .qoutes-heading {
+        font-size: 18px;
+    }
+
+    .church-padding {
+        padding: 0px 32px;
+    }
+
+    .list-style-none {
+        margin-left: -40px;
+    }
+
+    .church-text {
+        font-size: 30px;
+    }
+
+    .about-text {
+        font-size: 23px;
+    }
+
+    .mission-text {
+        font-size: 22px;
+    }
+
+    .mt-40 {
+        margin-top: 20px;
+    }
+
+    .mt-30 {
+        margin-top: 18px;
+    }
+
+    .mt-75 {
+        margin-top: 40px;
+    }
+
+    .mt-100 {
+        margin-top: 40px;
+    }
+
+    .church-desc-text {
+        font-size: 15px;
+    }
+
+
+    .belive-bg-color {
+        padding: 50px;
+    }
+
+    .belive-text {
+        font-size: 28px;
+    }
+
+    .latest-text {
+        font-size: 25px;
+    }
+
+    .latest-pera {
+        font-size: 16px;
+    }
+
+    #icons [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+        padding: 28px 37.3px;
+    }
+
+    #latest .mt-30 {
+        margin-top: 0;
+    }
+
+    .address-text {
+        font-size: 15px;
+    }
+
+    .media-latest-mt {
+        margin-top: 20px;
+    }
+
+    .place-text {
+        font-size: 28px;
+    }
+
+    .volunteer-text {
+        font-size: 32px;
+    }
+
+    .slider-pera-text {
+        font-size: 16px;
+    }
+
+    .slider-bg-img {
+        padding: 48px 0;
+    }
+
+    .btn-slider-join {
+        width: 170px;
+        height: 53px;
+        font-size: 20px;
+        line-height: 36px;
+    }
+
+    .speaker-text {
+        font-size: 32px;
+    }
+
+    .speaker-color {
+        font-size: 32px;
+    }
+
+    .speaker-pera {
+        font-size: 16px;
+    }
+
+    .card-heading {
+        font-size: 22px;
+    }
+
+    .card-desc {
+        font-size: 16px;
+    }
+
+    .pastor-text {
+        font-size: 18px;
+    }
+
+    .follow-text {
+        font-size: 18px;
+        margin-top: 4px;
+    }
+
+    .call-text {
+        font-size: 18px;
+        margin-top: 5px;
+    }
+
+    .no-text {
+        font-size: 24px;
+    }
+
+    .contact-us-bg-color {
+        padding: 20px 60px 32px 55px;
+    }
+
+    .social-bg-color {
+        padding: 31px 38px 22px 21px;
+    }
+
+    .ml-5 {
+        margin-left: .956rem !important;
+    }
+
+    .bz-text {
+        font-size: 20px;
+    }
+
+    .footer-text {
+        font-size: 18px;
+    }
+
+    .media-latest-mt {
+        margin-top: 30px;
+    }
 }
 
 @media screen and (max-width: 411px) {
 }
 
 @media screen and (max-width: 375px) {
+
+    #icons [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+        padding: 28px 32.8px;
+    }
+
+    .media-latest-mt {
+        margin-top: 30px;
+    }
 }
 
 @media screen and (max-width: 360px) {
+    #home {
+        padding: 5px 0 86px 0;
+    }
+
+    .chirst-text {
+        font-size: 32px;
+    }
+
+    .g-text {
+        font-size: 30px;
+    }
+
+    .banner-pera-text {
+        font-size: 20px;
+    }
+
+    .owl-carousel .owl-item img {
+        margin-left: 35%;
+    }
+
     .always-text {
         font-size: 20px;
         letter-spacing: 1px;
@@ -1357,30 +2319,1299 @@ button:focus {
         .below-always-one:before {
             border: 0px solid white;
         }
+
+    .qoutes-bg-color-one {
+        padding: 50px 41px 30px 40px;
+    }
+
+    .qoutes-bg-color-two {
+        padding: 41px 23px 31px 25px;
+    }
+
+    .qoutes-bg-color-three {
+        padding: 50px 41px 30px 40px;
+    }
+
+    .qoutes-heading {
+        font-size: 18px;
+    }
+
+    .church-padding {
+        padding: 0px 32px;
+    }
+
+    .list-style-none {
+        margin-left: -40px;
+    }
+
+    .church-text {
+        font-size: 30px;
+    }
+
+    .about-text {
+        font-size: 23px;
+    }
+
+    .mission-text {
+        font-size: 22px;
+    }
+
+    .mt-40 {
+        margin-top: 20px;
+    }
+
+    .mt-30 {
+        margin-top: 18px;
+    }
+
+    .mt-75 {
+        margin-top: 40px;
+    }
+
+    .mt-100 {
+        margin-top: 40px;
+    }
+
+    .church-desc-text {
+        font-size: 15px;
+    }
+
+    .belive-bg-color {
+        padding: 50px;
+    }
+
+    .belive-text {
+        font-size: 28px;
+    }
+
+    .latest-text {
+        font-size: 25px;
+    }
+
+    .latest-pera {
+        font-size: 16px;
+    }
+
+    #icons [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+        padding: 23px 30.9px;
+    }
+
+    #latest .mt-30 {
+        margin-top: 0;
+    }
+
+    .media-latest-mt {
+        margin-top: 20px;
+    }
+
+    .place-text {
+        font-size: 28px;
+    }
+
+    .volunteer-text {
+        font-size: 32px;
+    }
+
+    .slider-pera-text {
+        font-size: 16px;
+    }
+
+    .slider-bg-img {
+        padding: 48px 0;
+    }
+
+    .btn-slider-join {
+        width: 170px;
+        height: 53px;
+        font-size: 20px;
+        line-height: 36px;
+    }
+
+    .speaker-text {
+        font-size: 28px;
+    }
+
+    .speaker-color {
+        font-size: 28px;
+    }
+
+    .speaker-pera {
+        font-size: 16px;
+    }
+
+    .card-heading {
+        font-size: 22px;
+    }
+
+    .card-desc {
+        font-size: 16px;
+    }
+
+    .pastor-text {
+        font-size: 18px;
+    }
+
+    .contact-us-bg-color {
+        padding: 33px 60px 40px 46px;
+    }
+
+    .location-text {
+        font-size: 30px;
+    }
+
+    .visit-bold {
+        font-size: 20px;
+    }
+
+    .visit-regular {
+        font-size: 18px;
+    }
+
+    .join-text {
+        font-size: 30px;
+    }
+
+    .social-bg-color {
+        padding: 38px 9px 24px 8px;
+    }
+
+    .ml-5 {
+        margin-left: 1rem !important;
+    }
+
+    .media-call-mt {
+        margin-top: 25px;
+    }
+
+    .footer-text {
+        font-size: 17px;
+    }
+
+    .bz-text {
+        font-size: 19px;
+    }
+
+    .follow-text {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .call-text {
+        font-size: 18px;
+        margin-top: 6px;
+    }
+
+    .no-text {
+        font-size: 22px;
+    }
 }
 
 
 /*==================== Media Query For Land Scape Mode =====================*/
-@media screen and (max-width: 1500px) and (orientation: landscape) {
+@media screen and (max-width: 1280px) and (orientation: landscape) {
+    .belive-bg-color {
+        padding: 73px 90px;
+    }
 }
 
 @media screen and (max-width: 1024px) and (orientation: landscape) {
+    .belive-bg-color {
+        padding: 39px 90px;
+    }
 }
 
 @media screen and (max-width: 823px) and (orientation: landscape) {
+    .nav-item {
+        padding: 45px 29px;
+    }
+
+    .nav-setting-on-scroll {
+        padding: 10px 26px !important;
+    }
+
+    .chirst-text {
+        font-size: 32px;
+    }
+
+    .always-text {
+        font-size: 20px;
+        letter-spacing: 6px;
+    }
+
+    .g-text {
+        font-size: 34px;
+    }
+
+    .banner-pera-text {
+        font-size: 20px;
+    }
+
+    .owl-carousel .owl-item img {
+        margin-left: 41%;
+    }
+
+    .below-always:before {
+        content: '';
+        top: 15px;
+        left: -159px;
+        width: 41%;
+    }
+
+    .below-always:after {
+        content: '';
+        top: 10px;
+        right: -159px;
+        width: 41%;
+    }
+
+    .below-always-one:before {
+        content: '';
+        top: -64px;
+        left: -51px;
+        width: 26%;
+    }
+
+    .below-always-one:after {
+        content: '';
+        top: -59px;
+        right: -51px;
+        width: 26%;
+    }
+
+
+    .qoutes-heading {
+        font-size: 15px;
+    }
+
+    .qoutes-desc {
+        font-size: 14px;
+    }
+
+    .qoutes-bg-color-one {
+        padding: 41px 12px 31px 25px;
+    }
+
+    .qoutes-bg-color-two {
+        padding: 41px 12px 31px 25px;
+    }
+
+    .qoutes-bg-color-three {
+        padding: 41px 12px 31px 15px;
+    }
+
+    .church-padding {
+        padding: 0px 32px;
+    }
+
+    .list-style-none {
+        margin-left: -40px;
+    }
+
+    .church-text {
+        font-size: 30px;
+    }
+
+    .church-desc-text {
+        font-size: 16px;
+    }
+
+    .church-card-heading {
+        font-size: 23px;
+    }
+
+    .teach-heading {
+        font-size: 26px;
+    }
+
+    .about-text {
+        font-size: 23px;
+    }
+
+    .mission-text {
+        font-size: 22px;
+    }
+
+    .mt-40 {
+        margin-top: 20px;
+    }
+
+    .mt-30 {
+        margin-top: 18px;
+    }
+
+    .mt-75 {
+        margin-top: 40px;
+    }
+
+    .belive-bg-color {
+        padding: 28.5px;
+    }
+
+    .belive-text {
+        font-size: 22px;
+    }
+
+    .belive-pera-text {
+        font-size: 14px;
+    }
+
+    .below-belive {
+        display: block;
+    }
+
+        .below-belive:after {
+            content: '';
+            width: 10%;
+            top: 37px;
+            left: 0;
+        }
+
+
+
+    .latest-text {
+        font-size: 26px;
+    }
+
+    .latest-pera {
+        font-size: 15px;
+    }
+
+    #icons [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+        padding: 27px 32.8px;
+    }
+
+    .media-img-height {
+        height: 387px;
+    }
+
+    .mt-18 {
+        margin-top: 13px;
+    }
+
+    .latest-bg-color {
+        padding: 32px 51px 33px 50px;
+    }
+
+    .heading-text {
+        font-size: 20px;
+    }
+
+    .heading-pera-text {
+        font-size: 16px;
+    }
+
+    .address-text {
+        font-size: 15px;
+    }
+
+    .place-text {
+        font-size: 25px;
+    }
+
+    .volunteer-text {
+        font-size: 32px;
+    }
+
+    .slider-pera-text {
+        font-size: 16px;
+    }
+
+    .btn-slider-join {
+        width: 170px;
+        height: 53px;
+        font-size: 20px;
+        line-height: 36px;
+    }
+
+    .speaker-text {
+        font-size: 32px;
+    }
+
+    .speaker-color {
+        font-size: 32px;
+    }
+
+    .speaker-pera {
+        font-size: 16px;
+    }
+
+    .card-heading {
+        font-size: 22px;
+    }
+
+    .card-desc {
+        font-size: 16px;
+    }
+
+    .pastor-text {
+        font-size: 18px;
+    }
+
+    .follow-text {
+        font-size: 16px;
+        margin-top: 4px;
+    }
+
+    .call-text {
+        font-size: 18px;
+        margin-top: 0px;
+    }
+
+    .no-text {
+        font-size: 16px;
+    }
+
+    .contact-us-bg-color {
+        padding: 20px 60px 32px 55px;
+    }
+
+    .social-bg-color {
+        padding: 31px 38px 22px 21px;
+    }
+
+    .ml-5 {
+        margin-left: .956rem !important;
+    }
 }
+
+
 
 @media screen and (max-width: 740px) and (orientation: landscape) {
 }
 
 @media screen and (max-width: 736px) and (orientation: landscape) {
+    .nav-item {
+        padding: 45px 29px;
+    }
+
+    .nav-setting-on-scroll {
+        padding: 10px 26px !important;
+    }
+
+    .chirst-text {
+        font-size: 32px;
+    }
+
+    .always-text {
+        font-size: 20px;
+        letter-spacing: 6px;
+    }
+
+    .g-text {
+        font-size: 34px;
+    }
+
+    .banner-pera-text {
+        font-size: 20px;
+    }
+
+    .owl-carousel .owl-item img {
+        margin-left: 41%;
+    }
+
+    .below-always:before {
+        content: '';
+        top: 15px;
+        left: -184px;
+        width: 41%;
+    }
+
+    .below-always:after {
+        content: '';
+        top: 10px;
+        right: -166px;
+        width: 41%;
+    }
+
+    .below-always-one:before {
+        content: '';
+        top: -64px;
+        left: -51px;
+        width: 26%;
+    }
+
+    .below-always-one:after {
+        content: '';
+        top: -59px;
+        right: -40px;
+        width: 26%;
+    }
+
+
+    .qoutes-heading {
+        font-size: 18px;
+    }
+
+    .qoutes-desc {
+        font-size: 16px;
+    }
+
+    .qoutes-bg-color-one {
+        padding: 41px 110px 31px 110px;
+    }
+
+    .qoutes-bg-color-two {
+        padding: 41px 110px 31px 110px;
+    }
+
+    .qoutes-bg-color-three {
+        padding: 41px 110px 31px 110px;
+    }
+
+    .church-padding {
+        padding: 0px 32px;
+    }
+
+    .list-style-none {
+        margin-left: -40px;
+    }
+
+    .church-text {
+        font-size: 30px;
+    }
+
+    .church-desc-text {
+        font-size: 16px;
+    }
+
+    .church-card-heading {
+        font-size: 25px;
+    }
+
+    .teach-heading {
+        font-size: 25px;
+    }
+
+    .about-text {
+        font-size: 23px;
+    }
+
+    .mission-text {
+        font-size: 22px;
+    }
+
+    .mt-40 {
+        margin-top: 20px;
+    }
+
+    .mt-30 {
+        margin-top: 18px;
+    }
+
+    .mt-75 {
+        margin-top: 40px;
+    }
+
+    .pl-0 {
+        padding-left: 15px !important;
+    }
+
+    .pr-0 {
+        padding-right: 15px !important;
+    }
+
+    .belive-bg-color {
+        padding: 48px 90px 39px 90px;
+    }
+
+    .belive-text {
+        font-size: 27px;
+    }
+
+    .belive-pera-text {
+        font-size: 14px;
+    }
+
+    .below-belive {
+        display: block;
+    }
+
+        .below-belive:after {
+            content: '';
+            width: 10%;
+            top: 31px;
+            left: 0;
+        }
+
+
+
+    .latest-text {
+        font-size: 26px;
+    }
+
+    .latest-pera {
+        font-size: 15px;
+    }
+
+    #icons [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+        padding: 28px 53.4px;
+    }
+
+    .media-img-height {
+        height: 387px;
+    }
+
+    .media-latest-mt {
+        margin-top: 20px;
+    }
+
+    .mt-18 {
+        margin-top: 13px;
+    }
+
+    .latest-bg-color {
+        padding: 32px 51px 33px 50px;
+    }
+
+    .heading-text {
+        font-size: 20px;
+    }
+
+    .heading-pera-text {
+        font-size: 16px;
+    }
+
+    .address-text {
+        font-size: 15px;
+    }
+
+    .place-text {
+        font-size: 25px;
+    }
+
+    .volunteer-text {
+        font-size: 32px;
+    }
+
+    .slider-pera-text {
+        font-size: 16px;
+    }
+
+    .btn-slider-join {
+        width: 170px;
+        height: 53px;
+        font-size: 20px;
+        line-height: 36px;
+    }
+
+    .speaker-text {
+        font-size: 32px;
+    }
+
+    .speaker-color {
+        font-size: 32px;
+    }
+
+    .speaker-pera {
+        font-size: 16px;
+    }
+
+    .card-heading {
+        font-size: 22px;
+    }
+
+    .card-desc {
+        font-size: 16px;
+    }
+
+    .pastor-text {
+        font-size: 18px;
+    }
+
+    .follow-text {
+        font-size: 18px;
+        margin-top: 8px;
+    }
+
+    .call-text {
+        font-size: 18px;
+        margin-top: 0px;
+    }
+
+    .no-text {
+        font-size: 18px;
+    }
+
+    .contact-us-bg-color {
+        padding: 20px 60px 32px 55px;
+    }
+
+    .social-bg-color {
+        padding: 31px 38px 22px 21px;
+    }
+
+    .media-social-mt {
+        margin-top: 20px;
+    }
+
+    .ml-5 {
+        margin-left: .956rem !important;
+    }
+
+    .bz-text {
+        font-size: 20px;
+    }
+
+    .footer-text {
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width: 731px) and (orientation: landscape) {
+    .nav-item {
+        padding: 45px 29px;
+    }
+
+    .nav-setting-on-scroll {
+        padding: 10px 26px !important;
+    }
+
+    .chirst-text {
+        font-size: 32px;
+    }
+
+    .always-text {
+        font-size: 20px;
+        letter-spacing: 6px;
+    }
+
+    .g-text {
+        font-size: 34px;
+    }
+
+    .banner-pera-text {
+        font-size: 20px;
+    }
+
+    .owl-carousel .owl-item img {
+        margin-left: 41%;
+    }
+
+    .below-always:before {
+        content: '';
+        top: 15px;
+        left: -159px;
+        width: 41%;
+    }
+
+    .below-always:after {
+        content: '';
+        top: 10px;
+        right: -159px;
+        width: 41%;
+    }
+
+    .below-always-one:before {
+        content: '';
+        top: -64px;
+        left: -51px;
+        width: 26%;
+    }
+
+    .below-always-one:after {
+        content: '';
+        top: -59px;
+        right: -51px;
+        width: 26%;
+    }
+
+
+    .qoutes-heading {
+        font-size: 18px;
+    }
+
+    .qoutes-desc {
+        font-size: 16px;
+    }
+
+    .qoutes-bg-color-one {
+        padding: 41px 110px 31px 110px;
+    }
+
+    .qoutes-bg-color-two {
+        padding: 41px 110px 31px 110px;
+    }
+
+    .qoutes-bg-color-three {
+        padding: 41px 110px 31px 110px;
+    }
+
+    .church-padding {
+        padding: 0px 32px;
+    }
+
+    .list-style-none {
+        margin-left: -40px;
+    }
+
+    .church-text {
+        font-size: 30px;
+    }
+
+    .church-desc-text {
+        font-size: 16px;
+    }
+
+    .church-card-heading {
+        font-size: 25px;
+    }
+
+    .teach-heading {
+        font-size: 25px;
+    }
+
+    .about-text {
+        font-size: 23px;
+    }
+
+    .mission-text {
+        font-size: 22px;
+    }
+
+    .mt-40 {
+        margin-top: 20px;
+    }
+
+    .mt-30 {
+        margin-top: 18px;
+    }
+
+    .mt-75 {
+        margin-top: 40px;
+    }
+
+    .pl-0 {
+        padding-left: 15px !important;
+    }
+
+    .pr-0 {
+        padding-right: 15px !important;
+    }
+
+    .belive-bg-color {
+        padding: 48px 90px 39px 90px;
+    }
+
+    .belive-text {
+        font-size: 27px;
+    }
+
+    .belive-pera-text {
+        font-size: 14px;
+    }
+
+    .below-belive {
+        display: block;
+    }
+
+        .below-belive:after {
+            content: '';
+            width: 10%;
+            top: 31px;
+            left: 0;
+        }
+
+
+
+    .latest-text {
+        font-size: 26px;
+    }
+
+    .latest-pera {
+        font-size: 15px;
+    }
+
+    #icons [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+        padding: 28px 53.4px;
+    }
+
+    .media-img-height {
+        height: 387px;
+    }
+
+    .media-latest-mt {
+        margin-top: 20px;
+    }
+
+    .mt-18 {
+        margin-top: 13px;
+    }
+
+    .latest-bg-color {
+        padding: 32px 51px 33px 50px;
+    }
+
+    .heading-text {
+        font-size: 20px;
+    }
+
+    .heading-pera-text {
+        font-size: 16px;
+    }
+
+    .address-text {
+        font-size: 15px;
+    }
+
+    .place-text {
+        font-size: 25px;
+    }
+
+    .volunteer-text {
+        font-size: 32px;
+    }
+
+    .slider-pera-text {
+        font-size: 16px;
+    }
+
+    .btn-slider-join {
+        width: 170px;
+        height: 53px;
+        font-size: 20px;
+        line-height: 36px;
+    }
+
+    .speaker-text {
+        font-size: 32px;
+    }
+
+    .speaker-color {
+        font-size: 32px;
+    }
+
+    .speaker-pera {
+        font-size: 16px;
+    }
+
+    .card-heading {
+        font-size: 22px;
+    }
+
+    .card-desc {
+        font-size: 16px;
+    }
+
+    .pastor-text {
+        font-size: 18px;
+    }
+
+    .follow-text {
+        font-size: 18px;
+        margin-top: 8px;
+    }
+
+    .call-text {
+        font-size: 18px;
+        margin-top: 0px;
+    }
+
+    .no-text {
+        font-size: 18px;
+    }
+
+    .contact-us-bg-color {
+        padding: 20px 60px 32px 55px;
+    }
+
+    .social-bg-color {
+        padding: 31px 38px 22px 21px;
+    }
+
+    .media-social-mt {
+        margin-top: 20px;
+    }
+
+    .ml-5 {
+        margin-left: .956rem !important;
+    }
+
+    .bz-text {
+        font-size: 20px;
+    }
+
+    .footer-text {
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width: 667px) and (orientation: landscape) {
 }
 
 @media screen and (max-width: 640px) and (orientation: landscape) {
+    .nav-item {
+        padding: 45px 29px;
+    }
+
+    .nav-setting-on-scroll {
+        padding: 10px 26px !important;
+    }
+
+    .chirst-text {
+        font-size: 32px;
+    }
+
+    .always-text {
+        font-size: 20px;
+        letter-spacing: 6px;
+    }
+
+    .g-text {
+        font-size: 34px;
+    }
+
+    .banner-pera-text {
+        font-size: 20px;
+    }
+
+    .owl-carousel .owl-item img {
+        margin-left: 41%;
+    }
+
+    .below-always:before {
+        content: '';
+        top: 15px;
+        left: -159px;
+        width: 41%;
+    }
+
+    .below-always:after {
+        content: '';
+        top: 10px;
+        right: -159px;
+        width: 41%;
+    }
+
+    .below-always-one:before {
+        content: '';
+        top: -64px;
+        left: -51px;
+        width: 26%;
+    }
+
+    .below-always-one:after {
+        content: '';
+        top: -59px;
+        right: -51px;
+        width: 26%;
+    }
+
+
+    .qoutes-heading {
+        font-size: 18px;
+    }
+
+    .qoutes-desc {
+        font-size: 16px;
+    }
+
+    .qoutes-bg-color-one {
+        padding: 41px 110px 31px 110px;
+    }
+
+    .qoutes-bg-color-two {
+        padding: 41px 110px 31px 110px;
+    }
+
+    .qoutes-bg-color-three {
+        padding: 41px 110px 31px 110px;
+    }
+
+    .church-padding {
+        padding: 0px 32px;
+    }
+
+    .list-style-none {
+        margin-left: -40px;
+    }
+
+    .church-text {
+        font-size: 30px;
+    }
+
+    .church-desc-text {
+        font-size: 16px;
+    }
+
+    .church-card-heading {
+        font-size: 25px;
+    }
+
+    .teach-heading {
+        font-size: 25px;
+    }
+
+    .about-text {
+        font-size: 23px;
+    }
+
+    .mission-text {
+        font-size: 22px;
+    }
+
+    .mt-40 {
+        margin-top: 20px;
+    }
+
+    .mt-30 {
+        margin-top: 18px;
+    }
+
+    .mt-75 {
+        margin-top: 40px;
+    }
+
+    .pl-0 {
+        padding-left: 15px !important;
+    }
+
+    .pr-0 {
+        padding-right: 15px !important;
+    }
+
+    .belive-bg-color {
+        padding: 48px 90px 39px 90px;
+    }
+
+    .belive-text {
+        font-size: 22px;
+    }
+
+    .belive-pera-text {
+        font-size: 14px;
+    }
+
+    .below-belive {
+        display: block;
+    }
+
+        .below-belive:after {
+            content: '';
+            width: 10%;
+            top: 27px;
+            left: 0;
+        }
+
+
+
+    .latest-text {
+        font-size: 26px;
+    }
+
+    .latest-pera {
+        font-size: 15px;
+    }
+
+    #icons [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+        padding: 28px 53.4px;
+    }
+
+    .media-img-height {
+        height: 387px;
+    }
+
+    .media-latest-mt {
+        margin-top: 20px;
+    }
+
+    .mt-18 {
+        margin-top: 13px;
+    }
+
+    .latest-bg-color {
+        padding: 32px 51px 33px 50px;
+    }
+
+    .heading-text {
+        font-size: 20px;
+    }
+
+    .heading-pera-text {
+        font-size: 16px;
+    }
+
+    .address-text {
+        font-size: 15px;
+    }
+
+    .place-text {
+        font-size: 25px;
+    }
+
+    .volunteer-text {
+        font-size: 32px;
+    }
+
+    .slider-pera-text {
+        font-size: 16px;
+    }
+
+    .btn-slider-join {
+        width: 170px;
+        height: 53px;
+        font-size: 20px;
+        line-height: 36px;
+    }
+
+    .speaker-text {
+        font-size: 32px;
+    }
+
+    .speaker-color {
+        font-size: 32px;
+    }
+
+    .speaker-pera {
+        font-size: 16px;
+    }
+
+    .card-heading {
+        font-size: 22px;
+    }
+
+    .card-desc {
+        font-size: 16px;
+    }
+
+    .pastor-text {
+        font-size: 18px;
+    }
+
+    .follow-text {
+        font-size: 18px;
+        margin-top: 8px;
+    }
+
+    .call-text {
+        font-size: 18px;
+        margin-top: 0px;
+    }
+
+    .no-text {
+        font-size: 18px;
+    }
+
+    .contact-us-bg-color {
+        padding: 20px 60px 32px 55px;
+    }
+
+    .social-bg-color {
+        padding: 31px 38px 22px 21px;
+    }
+
+    .media-social-mt {
+        margin-top: 20px;
+    }
+
+    .ml-5 {
+        margin-left: .956rem !important;
+    }
+
+    .bz-text {
+        font-size: 20px;
+    }
+
+    .footer-text {
+        font-size: 18px;
+    }
 }
