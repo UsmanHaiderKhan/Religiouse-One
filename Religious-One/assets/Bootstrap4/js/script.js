@@ -180,24 +180,32 @@ requestScrollAnimation((pos) => {
 /*===================== 3D Slider Script ======================*/
 
 /*===================== Scroll Top Function Script ======================*/
-//$(function () {
-//    $(window).scroll(function () {
-//        var scroll = $(window).scrollTop();
-//        var w_width = $(window).width();
-//        if (w_width <= 480) {
-//            if (scroll >= 100) {
-//                $("nav").addClass("fixed-top sleep");
-//            } else {
-//                $("nav").removeClass("fixed-top sleep");
-//            }
-//        }
-//        else if (scroll >= 100) {
-//            $("nav").addClass("fixed-top sleep");
-//        } else {
-//            $("nav").removeClass("fixed-top sleep");
-//        }
-//    });
-//});
+$(function () {
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        var w_width = $(window).width();
+        if (w_width <= 480) {
+            if (scroll >= 100) {
+                $("nav").addClass("fixed-top sleep nav-bg-color ");
+                $(".navbar-brand img").addClass("scroll-logo-width");
+            } else {
+                $("nav").removeClass("fixed-top sleep nav-bg-color");
+                $(".navbar-brand img").removeClass("scroll-logo-width");
+            }
+        }
+        else if (scroll >= 100) {
+            $("nav").addClass("fixed-top sleep nav-bg-color");
+            $(".navbar-brand img").addClass("scroll-logo-width ml-5");
+            $(".nav-item").addClass("nav-setting-on-scroll");
+
+        } else {
+            $("nav").removeClass("fixed-top sleep nav-bg-color");
+            $(".navbar-brand img").removeClass("scroll-logo-width ml-5");
+            $(".nav-item").removeClass("nav-setting-on-scroll");
+
+        }
+    });
+});
 $(function () {
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
@@ -225,3 +233,9 @@ $(function () {
         });
 });
 /*===================== NAvTab Function Script ======================*/
+
+var bgm = document.getElementById("bgm");
+function bgmPlay() {
+    bgm.play();
+    bgm.prop();
+}
