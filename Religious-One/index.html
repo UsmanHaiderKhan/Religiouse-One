@@ -21,6 +21,9 @@
     <section id="home" style="background-image: url('assets/Images/main-banner.png');">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
+                <a class="navbar-brand d-none" href="#">
+                    <img src="assets/Images/logo.png" alt="Logo" style="width:40%">
+                </a>
                 <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -31,10 +34,10 @@
                             <a class="nav-link active scroll" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link scroll" href="#counter">About</a>
+                            <a class="nav-link scroll" href="#bible">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link scroll" href="#services">Events</a>
+                            <a class="nav-link scroll" href="#latest">Events</a>
                         </li>
                         <li class="ml-2">
                             <a href="index.html" class="navbar-brand">
@@ -42,10 +45,10 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link scroll" href="#gallery">Cause</a>
+                            <a class="nav-link scroll" href="#speaker">Cause</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link scroll" href="#client">Blog</a>
+                            <a class="nav-link scroll" href="#gallery">Blog</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link scroll" href="#contact-us">Contact</a>
@@ -296,7 +299,7 @@
                 </div>
             </div>
             <div class="row mt-50 justify-content-center">
-                <div class="col-lg-6 mt-30">
+                <div class="col-lg-6 mt-30 no-display">
                     <div class="row">
                         <div class="col-md-6 pr-0">
                             <img src="assets/Images/lstest-img/latest.png" class="w-100 media-img-height img-height-13h" />
@@ -323,8 +326,70 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- The Modal -->
+                                <div class="modal fadeIn" id="myModal">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Donate the Churuch</h4>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <div class="row justify-content-center">
+                                                    <div class="col-lg-9 p-0">
+                                                        <div class="text-center">
+                                                            <p class="text-uppercase mb-0">
+                                                                <h4>DONATE TO OUR CAMPAIGN!</h4>
+                                                            </p>
+                                                            <form action="" class="mt-40">
+                                                                <div class="form-check-inline">
+                                                                    <label class="form-check-label radio-active" for="radio1">
+                                                                        <input type="radio" class="form-check-input radio-active" id="radio1" name="donation"
+                                                                               value="₽5" checked>₽5
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check-inline">
+                                                                    <label class="form-check-label" for="radio2">
+                                                                        <input type="radio" class="form-check-input" id="radio2" name="donation" value="₽10">₽10
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check-inline">
+                                                                    <label class="form-check-label" for="radio3">
+                                                                        <input type="radio" class="form-check-input" id="radio3" name="donation" value="₽15">₽15
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check-inline">
+                                                                    <label class="form-check-label" for="radio4">
+                                                                        <input type="radio" class="form-check-input" id="radio4" name="donation" value="₽20">₽20
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check-inline media-model-mt">
+                                                                    <label class="form-check-label" for="radio5">
+                                                                        <input type="radio" class="form-check-input" id="radio5" name="donation" value="other">Other
+                                                                    </label>
+                                                                </div>
+                                                                <div class="display-none mt-15 text-center media-padding">
+                                                                    <input type="number" class="form-check-input form-control" id="radio6" name="donation" value="" placeholder="Make Your Own Donation Example / 100$">
+                                                                </div>
+                                                                <div class="mt-90">
+                                                                    <button type="submit" class="btn btn-donation">Donate</button>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="mt-20">
-                                    <a href="#" class="btn btn-donate">donate Now</a>
+                                    <a href="#" class="btn btn-donate" data-toggle="modal" data-target="#myModal">donate Now</a>
                                 </div>
                             </div>
                             <div class="mt-18" id="icons">
@@ -339,7 +404,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 mt-30">
+                <div class="col-lg-6 mt-30 no-display">
                     <div class="row">
                         <div class="col-md-6 pr-0 media-latest-mt">
                             <img src="assets/Images/lstest-img/l2.png" class="w-100 media-img-height" />
@@ -366,12 +431,76 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="modal fadeIn" id="myModal">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Donate the Churuch</h4>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <div class="row justify-content-center">
+                                                    <div class="col-lg-9 p-0">
+                                                        <div class="text-center">
+                                                            <p class="text-uppercase mb-0">
+                                                                <h4>DONATE TO OUR CAMPAIGN!</h4>
+                                                            </p>
+                                                            <form action="" class="mt-40">
+                                                                <div class="form-check-inline">
+                                                                    <label class="form-check-label radio-active" for="radio1">
+                                                                        <input type="radio" class="form-check-input radio-active" id="radio1" name="donation"
+                                                                               value="₽5" checked>₽5
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check-inline">
+                                                                    <label class="form-check-label" for="radio2">
+                                                                        <input type="radio" class="form-check-input" id="radio2" name="donation" value="₽10">₽10
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check-inline">
+                                                                    <label class="form-check-label" for="radio3">
+                                                                        <input type="radio" class="form-check-input" id="radio3" name="donation" value="₽15">₽15
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check-inline">
+                                                                    <label class="form-check-label" for="radio4">
+                                                                        <input type="radio" class="form-check-input" id="radio4" name="donation" value="₽20">₽20
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check-inline media-model-mt">
+                                                                    <label class="form-check-label" for="radio5">
+                                                                        <input type="radio" class="form-check-input" id="radio5" name="donation" value="other">Other
+                                                                    </label>
+                                                                </div>
+                                                                <div class="display-none mt-15 text-center media-padding">
+                                                                    <input type="number" class="form-check-input form-control" id="radio6" name="donation" value="" placeholder="Make Your Own Donation Example / 100$">
+                                                                </div>
+                                                                <div class="mt-90">
+                                                                    <button type="submit" class="btn btn-donation">Donate</button>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="mt-20">
-                                    <a href="#" class="btn btn-donate">donate Now</a>
+                                    <a href="#" class="btn btn-donate" data-toggle="modal" data-target="#myModal">donate Now</a>
                                 </div>
                             </div>
                             <div class="mt-18" id="icons">
-                                <a href="#" class="text-none"><i class="flaticon-play-button"></i></a>
+                                <audio id="bgm">
+                                    <source src="http://tezhantezcan.com/bgm.mp3" type="audio/mpeg" />
+                                </audio>
+                                <i class="flaticon-play-button" onclick="bgmPlay()" style="cursor: pointer"></i>
                                 <a href="#" class="text-none"><i class="flaticon-headphone-symbol ml-5px"></i></a>
                                 <a href="#" class="text-none"><i class="flaticon-open-book ml-5px"></i></a>
                                 <a href="#" class="text-none"><i class="flaticon-download ml-5px"></i></a>
@@ -379,7 +508,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 mt-30">
+                <div class="col-lg-6 mt-30 no-display">
                     <div class="row">
                         <div class="col-md-6 pr-0">
                             <div class="latest-bg-color media-latest-mt">
@@ -403,12 +532,77 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- The Modal -->
+                                <div class="modal fadeIn" id="myModal">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Donate the Churuch</h4>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <div class="row justify-content-center">
+                                                    <div class="col-lg-9 p-0">
+                                                        <div class="text-center">
+                                                            <p class="text-uppercase mb-0">
+                                                                <h4>DONATE TO OUR CAMPAIGN!</h4>
+                                                            </p>
+                                                            <form action="" class="mt-40">
+                                                                <div class="form-check-inline">
+                                                                    <label class="form-check-label radio-active" for="radio1">
+                                                                        <input type="radio" class="form-check-input radio-active" id="radio1" name="donation"
+                                                                               value="₽5" checked>₽5
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check-inline">
+                                                                    <label class="form-check-label" for="radio2">
+                                                                        <input type="radio" class="form-check-input" id="radio2" name="donation" value="₽10">₽10
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check-inline">
+                                                                    <label class="form-check-label" for="radio3">
+                                                                        <input type="radio" class="form-check-input" id="radio3" name="donation" value="₽15">₽15
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check-inline">
+                                                                    <label class="form-check-label" for="radio4">
+                                                                        <input type="radio" class="form-check-input" id="radio4" name="donation" value="₽20">₽20
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check-inline media-model-mt">
+                                                                    <label class="form-check-label" for="radio5">
+                                                                        <input type="radio" class="form-check-input" id="radio5" name="donation" value="other">Other
+                                                                    </label>
+                                                                </div>
+                                                                <div class="display-none mt-15 text-center media-padding">
+                                                                    <input type="number" class="form-check-input form-control" id="radio6" name="donation" value="" placeholder="Make Your Own Donation Example / 100$">
+                                                                </div>
+                                                                <div class="mt-90">
+                                                                    <button type="submit" class="btn btn-donation">Donate</button>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="mt-20">
-                                    <a href="#" class="btn btn-donate">donate Now</a>
+                                    <a href="#" class="btn btn-donate" data-toggle="modal" data-target="#myModal">donate Now</a>
                                 </div>
                             </div>
                             <div class="mt-18" id="icons">
-                                <a href="#" class="text-none"><i class="flaticon-play-button"></i></a>
+                                <audio id="bgm">
+                                    <source src="http://tezhantezcan.com/bgm.mp3" type="audio/mpeg" />
+                                </audio>
+                                <i class="flaticon-play-button" onclick="bgmPlay()" style="cursor: pointer"></i>
                                 <a href="#" class="text-none"><i class="flaticon-headphone-symbol ml-5px"></i></a>
                                 <a href="#" class="text-none"><i class="flaticon-open-book ml-5px"></i></a>
                                 <a href="#" class="text-none"><i class="flaticon-download ml-5px"></i></a>
@@ -419,7 +613,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 mt-30">
+                <div class="col-lg-6 mt-30 no-display">
                     <div class="row">
                         <div class="col-md-6 pr-0">
                             <div class="latest-bg-color">
@@ -443,12 +637,77 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- The Modal -->
+                                <div class="modal fadeIn" id="myModal">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Donate the Churuch</h4>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <div class="row justify-content-center">
+                                                    <div class="col-lg-9 p-0">
+                                                        <div class="text-center">
+                                                            <p class="text-uppercase mb-0">
+                                                                <h4>DONATE TO OUR CAMPAIGN!</h4>
+                                                            </p>
+                                                            <form action="" class="mt-40">
+                                                                <div class="form-check-inline">
+                                                                    <label class="form-check-label radio-active" for="radio1">
+                                                                        <input type="radio" class="form-check-input radio-active" id="radio1" name="donation"
+                                                                               value="₽5" checked>₽5
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check-inline">
+                                                                    <label class="form-check-label" for="radio2">
+                                                                        <input type="radio" class="form-check-input" id="radio2" name="donation" value="₽10">₽10
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check-inline">
+                                                                    <label class="form-check-label" for="radio3">
+                                                                        <input type="radio" class="form-check-input" id="radio3" name="donation" value="₽15">₽15
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check-inline">
+                                                                    <label class="form-check-label" for="radio4">
+                                                                        <input type="radio" class="form-check-input" id="radio4" name="donation" value="₽20">₽20
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check-inline media-model-mt">
+                                                                    <label class="form-check-label" for="radio5">
+                                                                        <input type="radio" class="form-check-input" id="radio5" name="donation" value="other">Other
+                                                                    </label>
+                                                                </div>
+                                                                <div class="display-none mt-15 text-center media-padding">
+                                                                    <input type="number" class="form-check-input form-control" id="radio6" name="donation" value="" placeholder="Make Your Own Donation Example / 100$">
+                                                                </div>
+                                                                <div class="mt-90">
+                                                                    <button type="submit" class="btn btn-donation">Donate</button>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="mt-20">
-                                    <a href="#" class="btn btn-donate">donate Now</a>
+                                    <a href="#" class="btn btn-donate" data-toggle="modal" data-target="#myModal">donate Now</a>
                                 </div>
                             </div>
                             <div class="mt-18" id="icons">
-                                <a href="#" class="text-none"><i class="flaticon-play-button"></i></a>
+                                <audio id="bgm">
+                                    <source src="http://tezhantezcan.com/bgm.mp3" type="audio/mpeg" />
+                                </audio>
+                                <i class="flaticon-play-button" onclick="bgmPlay()" style="cursor: pointer"></i>
                                 <a href="#" class="text-none"><i class="flaticon-headphone-symbol ml-5px"></i></a>
                                 <a href="#" class="text-none"><i class="flaticon-open-book ml-5px"></i></a>
                                 <a href="#" class="text-none"><i class="flaticon-download ml-5px"></i></a>
@@ -458,6 +717,219 @@
                             <img src="assets/Images/lstest-img/l4.png" class="w-100 media-latest-mt media-img-height" />
                         </div>
                     </div>
+                </div>
+                <div class="col-lg-6 mt-30 no-display">
+                    <div class="row">
+                        <div class="col-md-6 pr-0">
+                            <img src="assets/Images/lstest-img/latest.png" class="w-100 media-img-height img-height-13h" />
+                        </div>
+                        <div class="col-md-6 pl-0">
+                            <div class="latest-bg-color">
+                                <h2 class="heading-text">Charity for Water</h2>
+                                <p class="heading-pera-text">
+                                    Sed ut perspiciatis undemis
+                                    tiste natus error sit volupter
+                                    totam rem aperiam
+                                </p>
+                                <div id="time-home">
+                                    <div class="media mt-24">
+                                        <i class="flaticon-home mr-3"></i>
+                                        <div class="media-body">
+                                            <p class="address-text">2 Sant Court Road, London</p>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <i class="flaticon-clock-circular-outline mr-3"></i>
+                                        <div class="media-body">
+                                            <p class="address-text">10:00 AM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- The Modal -->
+                                <div class="modal fadeIn" id="myModal">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Donate the Churuch</h4>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <div class="row justify-content-center">
+                                                    <div class="col-lg-9 p-0">
+                                                        <div class="text-center">
+                                                            <p class="text-uppercase mb-0">
+                                                                <h4>DONATE TO OUR CAMPAIGN!</h4>
+                                                            </p>
+                                                            <form action="" class="mt-40">
+                                                                <div class="form-check-inline">
+                                                                    <label class="form-check-label radio-active" for="radio1">
+                                                                        <input type="radio" class="form-check-input radio-active" id="radio1" name="donation"
+                                                                               value="₽5" checked>₽5
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check-inline">
+                                                                    <label class="form-check-label" for="radio2">
+                                                                        <input type="radio" class="form-check-input" id="radio2" name="donation" value="₽10">₽10
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check-inline">
+                                                                    <label class="form-check-label" for="radio3">
+                                                                        <input type="radio" class="form-check-input" id="radio3" name="donation" value="₽15">₽15
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check-inline">
+                                                                    <label class="form-check-label" for="radio4">
+                                                                        <input type="radio" class="form-check-input" id="radio4" name="donation" value="₽20">₽20
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check-inline media-model-mt">
+                                                                    <label class="form-check-label" for="radio5">
+                                                                        <input type="radio" class="form-check-input" id="radio5" name="donation" value="other">Other
+                                                                    </label>
+                                                                </div>
+                                                                <div class="display-none mt-15 text-center media-padding">
+                                                                    <input type="number" class="form-check-input form-control" id="radio6" name="donation" value="" placeholder="Make Your Own Donation Example / 100$">
+                                                                </div>
+                                                                <div class="mt-90">
+                                                                    <button type="submit" class="btn btn-donation">Donate</button>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-20">
+                                    <a href="#" class="btn btn-donate" data-toggle="modal" data-target="#myModal">donate Now</a>
+                                </div>
+                            </div>
+                            <div class="mt-18" id="icons">
+                                <audio id="bgm">
+                                    <source src="http://tezhantezcan.com/bgm.mp3" type="audio/mpeg" />
+                                </audio>
+                                <i class="flaticon-play-button" onclick="bgmPlay()" style="cursor: pointer"></i>
+                                <a href="#" class="text-none"><i class="flaticon-headphone-symbol ml-5px"></i></a>
+                                <a href="#" class="text-none"><i class="flaticon-open-book ml-5px"></i></a>
+                                <a href="#" class="text-none"><i class="flaticon-download ml-5px"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-30 no-display">
+                    <div class="row">
+                        <div class="col-md-6 pr-0 media-latest-mt">
+                            <img src="assets/Images/lstest-img/l2.png" class="w-100 media-img-height" />
+                        </div>
+                        <div class="col-md-6 pl-0">
+                            <div class="latest-bg-color">
+                                <h2 class="heading-text">Spritual Discipline</h2>
+                                <p class="heading-pera-text">
+                                    Sed ut perspiciatis undemis
+                                    tiste natus error sit volupter
+                                    totam rem aperiam
+                                </p>
+                                <div id="time-home">
+                                    <div class="media mt-24">
+                                        <i class="flaticon-home mr-3"></i>
+                                        <div class="media-body">
+                                            <p class="address-text">2 Sant Court Road, London</p>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <i class="flaticon-clock-circular-outline mr-3"></i>
+                                        <div class="media-body">
+                                            <p class="address-text">10:00 AM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- The Modal -->
+                                <div class="modal fadeIn" id="myModal">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Donate the Churuch</h4>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <div class="row justify-content-center">
+                                                    <div class="col-lg-9 p-0">
+                                                        <div class="text-center">
+                                                            <p class="text-uppercase mb-0">
+                                                                <h4>DONATE TO OUR CAMPAIGN!</h4>
+                                                            </p>
+                                                            <form action="" class="mt-40">
+                                                                <div class="form-check-inline">
+                                                                    <label class="form-check-label radio-active" for="radio1">
+                                                                        <input type="radio" class="form-check-input radio-active" id="radio1" name="donation"
+                                                                               value="₽5" checked>₽5
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check-inline">
+                                                                    <label class="form-check-label" for="radio2">
+                                                                        <input type="radio" class="form-check-input" id="radio2" name="donation" value="₽10">₽10
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check-inline">
+                                                                    <label class="form-check-label" for="radio3">
+                                                                        <input type="radio" class="form-check-input" id="radio3" name="donation" value="₽15">₽15
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check-inline">
+                                                                    <label class="form-check-label" for="radio4">
+                                                                        <input type="radio" class="form-check-input" id="radio4" name="donation" value="₽20">₽20
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check-inline media-model-mt">
+                                                                    <label class="form-check-label" for="radio5">
+                                                                        <input type="radio" class="form-check-input" id="radio5" name="donation" value="other">Other
+                                                                    </label>
+                                                                </div>
+                                                                <div class="display-none mt-15 text-center media-padding">
+                                                                    <input type="number" class="form-check-input form-control" id="radio6" name="donation" value="" placeholder="Make Your Own Donation Example / 100$">
+                                                                </div>
+                                                                <div class="mt-90">
+                                                                    <button type="submit" class="btn btn-donation">Donate</button>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-20">
+                                    <a href="#" class="btn btn-donate" data-toggle="modal" data-target="#myModal">donate Now</a>
+                                </div>
+                             </div>
+                            <div class="mt-18" id="icons">
+                                <audio id="bgm">
+                                    <source src="http://tezhantezcan.com/bgm.mp3" type="audio/mpeg" />
+                                </audio>
+                                <i class="flaticon-play-button" onclick="bgmPlay()" style="cursor: pointer"></i>
+                                <a href="#" class="text-none"><i class="flaticon-headphone-symbol ml-5px"></i></a>
+                                <a href="#" class="text-none"><i class="flaticon-open-book ml-5px"></i></a>
+                                <a href="#" class="text-none"><i class="flaticon-download ml-5px"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-75">
+                    <button class="btn btn-latest-more" id="load-more">More</button>
                 </div>
             </div>
         </div>
@@ -512,7 +984,7 @@
                             </div>
                         </div>
                         <div class="text-center mt-70">
-                            <a href="#" class="btn btn-slider-join">Join Us</a>
+                            <a href="#contact-us" class="btn btn-slider-join">Join Us</a>
                         </div>
                     </div>
                 </div>
@@ -798,11 +1270,11 @@
                         <h2 class="follow-text">Follow us:</h2>
                         <div class="media-body">
                             <div id="social-iconss">
-                                <a href="#" class="social-link ml-5"><i class="flaticon-facebook-logo"></i></a>
-                                <a href="#" class="social-link ml-5"><i class="flaticon-twitter-logo-silhouette"></i></a>
-                                <a href="#" class="social-link ml-5"><i class="flaticon-instagram"></i></a>
-                                <a href="#" class="social-link ml-5"><i class="flaticon-youtube"></i></a>
-                                <a href="#" class="social-link ml-5"><i class="flaticon-pinterest"></i></a>
+                                <a href="#" class="social-link ml-4"><i class="flaticon-facebook-logo"></i></a>
+                                <a href="#" class="social-link ml-4"><i class="flaticon-twitter-logo-silhouette"></i></a>
+                                <a href="#" class="social-link ml-4"><i class="flaticon-instagram"></i></a>
+                                <a href="#" class="social-link ml-4"><i class="flaticon-youtube"></i></a>
+                                <a href="#" class="social-link ml-4"><i class="flaticon-pinterest"></i></a>
                             </div>
                         </div>
                     </div>
