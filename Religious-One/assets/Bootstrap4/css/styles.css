@@ -1255,6 +1255,28 @@ button:focus {
     outline: none;
 }
 
+.no-display {
+    display: none;
+}
+
+.btn-latest-more {
+    width: 213px;
+    height: 66px;
+    font-size: 18px;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 0px;
+    background-color: #ed1c43;
+}
+
+.btn-load-more:hover {
+    background-color: #ed1c43;
+}
+
 .btn-load-more {
     width: 213px;
     height: 66px;
@@ -1299,19 +1321,56 @@ button:focus {
     transition: all .5s ease-in-out;
 }
 
-.my-position-relative {
-    position: relative;
+.form-check-inline .form-check-input {
+    display: none;
 }
 
-.my-position-absolute {
-    position: absolute;
+.display-none {
+    display: none;
 }
 
-.image-setting {
-    width: 450px;
-    height: 722px;
+.form-check-label {
+    background: black;
+    color: white;
+    padding: 15px 37px;
 }
 
+.btn-donation {
+    width: 190px;
+    height: 56px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 42px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    background-color: #ed1c43;
+}
+
+    .btn-donation:hover {
+        background-color: #ed1c43;
+    }
+
+.radio-active {
+    background: #f5d76e;
+    color: white;
+}
+
+.show-hide {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 0;
+    margin-right: 0.75rem;
+}
+
+#latest .form-control {
+    height: calc(2.25rem + 17px);
+    width: 80%;
+}
 /*================ Media Query ===============*/
 @media screen and (max-width: 1500px) {
     .img-height-13h {
@@ -1326,7 +1385,7 @@ button:focus {
 
 @media screen and (max-width: 1367px) {
     .img-height-13h {
-        height: 448px;
+        height: 447px;
     }
 
     .contact-us-bg-color {
@@ -1337,7 +1396,7 @@ button:focus {
 
 @media screen and (max-width: 1024px) {
     .nav-item {
-        padding: 45px 29px;
+        padding: 20px 29px;
     }
 
     .nav-setting-on-scroll {
@@ -1501,8 +1560,20 @@ button:focus {
 }
 
 @media screen and (max-width: 800px) {
+    .d-none {
+        display: block !important;
+    }
+
+    .media-model-mt {
+        margin-top: 25px;
+    }
+
+    .media-padding {
+        padding: 23px 74px;
+    }
+
     .nav-item {
-        padding: 45px 29px;
+        padding: 13px 29px;
     }
 
     .nav-setting-on-scroll {
@@ -1755,8 +1826,20 @@ button:focus {
 }
 
 @media screen and (max-width: 768px) {
+    .media-model-mt {
+        margin-top: 25px;
+    }
+
+    .media-padding {
+        padding: 23px 74px;
+    }
+
+    .d-none {
+        display: block !important;
+    }
+
     .nav-item {
-        padding: 45px 29px;
+        padding: 12px 29px;
     }
 
     .nav-setting-on-scroll {
@@ -2009,6 +2092,10 @@ button:focus {
 }
 
 @media screen and (max-width: 414px) {
+    .d-none {
+        display: block !important;
+    }
+
     .pl-0 {
         padding-left: 15px !important;
     }
@@ -2018,7 +2105,7 @@ button:focus {
     }
 
     .nav-item {
-        padding: 45px 29px;
+        padding: 15px 29px;
     }
 
     .nav-setting-on-scroll {
@@ -2252,9 +2339,15 @@ button:focus {
 }
 
 @media screen and (max-width: 411px) {
+    .d-none {
+        display: block !important;
+    }
 }
 
 @media screen and (max-width: 375px) {
+    .d-none {
+        display: block !important;
+    }
 
     #icons [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
         padding: 28px 32.8px;
@@ -2266,6 +2359,10 @@ button:focus {
 }
 
 @media screen and (max-width: 360px) {
+    .d-none {
+        display: block !important;
+    }
+
     #home {
         padding: 5px 0 86px 0;
     }
@@ -2512,17 +2609,33 @@ button:focus {
     .belive-bg-color {
         padding: 73px 90px;
     }
+
+    .contact-us-bg-color {
+        padding: 110px 60px 81px 180px;
+    }
 }
 
 @media screen and (max-width: 1024px) and (orientation: landscape) {
     .belive-bg-color {
-        padding: 39px 90px;
+        padding: 40.5px 90px;
     }
 }
 
 @media screen and (max-width: 823px) and (orientation: landscape) {
+    .d-none {
+        display: block !important;
+    }
+
+    .media-model-mt {
+        margin-top: 25px;
+    }
+
+    .media-padding {
+        padding: 23px 74px;
+    }
+
     .nav-item {
-        padding: 45px 29px;
+        padding: 15px 29px;
     }
 
     .nav-setting-on-scroll {
@@ -2774,14 +2887,16 @@ button:focus {
     }
 }
 
-
-
 @media screen and (max-width: 740px) and (orientation: landscape) {
 }
 
 @media screen and (max-width: 736px) and (orientation: landscape) {
+    .d-none {
+        display: block !important;
+    }
+
     .nav-item {
-        padding: 45px 29px;
+        padding: 14px 29px;
     }
 
     .nav-setting-on-scroll {
@@ -3058,8 +3173,12 @@ button:focus {
 }
 
 @media screen and (max-width: 731px) and (orientation: landscape) {
+    .d-none {
+        display: block !important;
+    }
+
     .nav-item {
-        padding: 45px 29px;
+        padding: 13px 29px;
     }
 
     .nav-setting-on-scroll {
@@ -3336,11 +3455,18 @@ button:focus {
 }
 
 @media screen and (max-width: 667px) and (orientation: landscape) {
+    .d-none {
+        display: block !important;
+    }
 }
 
 @media screen and (max-width: 640px) and (orientation: landscape) {
+    .d-none {
+        display: block !important;
+    }
+
     .nav-item {
-        padding: 45px 29px;
+        padding: 13px 29px;
     }
 
     .nav-setting-on-scroll {
