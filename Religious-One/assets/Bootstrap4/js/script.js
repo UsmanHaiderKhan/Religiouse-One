@@ -239,3 +239,32 @@ function bgmPlay() {
     bgm.play();
     bgm.prop();
 }
+/*===================== Another Load More Script ======================*/
+$(".no-display").slice(0, 4).show();
+$("#load-more").on('click', function (e) {
+    e.preventDefault();
+    $(".no-display:hidden").slice(0, 2).slideDown();
+    if ($(".no-display:hidden").length == 0) {
+        $("#load-more").fadeOut('slow');
+    }
+    $('html,body').animate({
+        scrollTop: $(this).offset().center
+    }, 1500);
+});
+/*===================== Donation Script ======================*/
+$('input[name="donation"]').change(function (e) {
+    var check = $("input[name='donation']:checked").val();
+    if (check == "other") {
+        $("#radio6").parent().removeClass('display-none');
+    } else {
+        $("#radio6").parent().addClass('display-none');
+    }
+});
+/*=====================Active Class Script ======================*/
+$(function () {
+    $('.form-check-label').on('click',
+        function () {
+            $('.form-check-label').removeClass('radio-active');
+            $(this).addClass('radio-active');
+        });
+});
