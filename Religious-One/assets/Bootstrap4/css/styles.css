@@ -1,4 +1,4 @@
-﻿/*================================= 
+﻿/*=================================
         Font-Family's Start
   =================================*/
 @font-face {
@@ -43,7 +43,7 @@ font-family: 'Lato', sans-serif;
 
 */
 
-/*================================= 
+/*=================================
         Font-Family's End
   =================================*/
 
@@ -55,7 +55,7 @@ html, body {
     -moz-osx-font-smoothing: grayscale;
     scroll-behavior: smooth;
 }
-/*================================= 
+/*=================================
     Navbar Section Styling
   =================================*/
 .nav-bg-color {
@@ -270,7 +270,7 @@ html, body {
     left: 0;
     right: 0;
 }
-/*================================= 
+/*=================================
     Below Home Section Styling
   =================================*/
 .qoutes-bg-color-one {
@@ -305,7 +305,7 @@ html, body {
     width: 100%;
     padding: 50px 65px 50px 10px;
 }
-/*================================= 
+/*=================================
       Churuh Section Styling
   =================================*/
 .bg-color-churuh {
@@ -358,7 +358,7 @@ html, body {
     font-weight: 500;
     font-family: 'Noto Sans', sans-serif;
 }
-/*================================= 
+/*=================================
     Latest Section Styling
   =================================*/
 .latest-text {
@@ -433,15 +433,23 @@ html, body {
         color: rgb(237, 28, 67);
     }
 
-
-#icons [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
-    padding: 23px;
-    margin-left: 0;
-    font-size: 21px;
-    color: #2d2303;
+#icons .outer-bg-color {
+    width: 68px;
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: -moz-linear-gradient( 180deg, rgb(251,204,22) 0%, rgb(228,169,12) 100%);
     background-image: -webkit-linear-gradient( 180deg, rgb(251,204,22) 0%, rgb(228,169,12) 100%);
     background-image: -ms-linear-gradient( 180deg, rgb(251,204,22) 0%, rgb(228,169,12) 100%);
+}
+
+#icons
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+    margin-left: 0;
+    font-size: 21px;
+    color: #2d2303;
 }
 
 #time-home [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
@@ -460,11 +468,11 @@ html, body {
 .ml-5px {
     margin-left: -5px;
 }
-/*================================= 
+/*=================================
      Belive Section Styling
   =================================*/
 .belive-bg-color {
-    padding: 85px 90px;
+    padding: 113.4px 90px;
     width: 100%;
     height: auto;
     background: #34373c;
@@ -521,7 +529,7 @@ html, body {
     .btn-join:hover {
         color: #b1b3b5;
     }
-/*================================= 
+/*=================================
     Slider Section Styling
   =================================*/
 .slider-bg-img {
@@ -619,7 +627,7 @@ html, body {
 #slider [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
     font-size: 40px;
 }
-/*================================= 
+/*=================================
      Speaker Section Styling
   =================================*/
 .speaker-text {
@@ -705,7 +713,7 @@ html, body {
     color: #5c5c5c;
     margin-left: 0;
 }
-/*================================= 
+/*=================================
       Gallery section Styling
   =================================*/
 
@@ -755,12 +763,12 @@ html, body {
     .light-link:hover {
         text-decoration: none;
     }
-/*================================= 
+/*=================================
       Contact-Us Section Styling
   =================================*/
 .contact-us-bg-color {
     background: #f5d76e;
-    padding: 95px 60px 96px 180px;
+    padding: 44px 60px 53px 180px;
 }
 
 .location-text {
@@ -875,7 +883,7 @@ html, body {
     font-size: 22px;
     font-family: 'HelveticaNeueLTPro-Bd';
 }
-/*================================= 
+/*=================================
           Read More Styling
   =================================*/
 .comments-space {
@@ -1377,26 +1385,36 @@ button:focus {
         height: 447px;
     }
 
+    .belive-bg-color {
+        padding: 97px 90px;
+    }
+
     .contact-us-bg-color {
-        background: #f5d76e;
-        padding: 110px 60px 110px 180px;
+        padding: 36px 60px 35px 180px;
     }
 }
 
-@media screen and (max-width: 1367px) {
+@media screen and (max-width: 1368px) {
     .img-height-13h {
         height: 447px;
     }
 
+    .belive-bg-color {
+        padding: 87.4px 90px;
+    }
+
     .contact-us-bg-color {
-        background: #f5d76e;
-        padding: 110px 60px 112px 180px;
+        padding: 27px 60px 24px 180px;
     }
 }
 
 @media screen and (max-width: 1024px) {
     .nav-item {
         padding: 20px 29px;
+    }
+
+    .map-height {
+        height: 100%;
     }
 
     .nav-setting-on-scroll {
@@ -1445,7 +1463,7 @@ button:focus {
     }
 
     .belive-bg-color {
-        padding: 51.5px 28px;
+        padding: 50px 28px;
     }
 
     .belive-text {
@@ -1473,8 +1491,8 @@ button:focus {
         font-size: 17px;
     }
 
-    #icons [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
-        padding: 17.84px;
+    #icons .outer-bg-color {
+        height: 56px;
     }
 
     .media-img-height {
@@ -1559,9 +1577,13 @@ button:focus {
     }*/
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 801px) {
     .d-none {
         display: block !important;
+    }
+
+    .logo-display {
+        display: none;
     }
 
     .media-model-mt {
@@ -1727,8 +1749,9 @@ button:focus {
         font-size: 15px;
     }
 
-    #icons [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
-        padding: 27px 32.8px;
+    #icons .outer-bg-color {
+        width: 100%;
+        height: 65.5px;
     }
 
     .media-img-height {
@@ -1825,7 +1848,7 @@ button:focus {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
     .media-model-mt {
         margin-top: 25px;
     }
@@ -2091,7 +2114,7 @@ button:focus {
     }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 415px) {
     .d-none {
         display: block !important;
     }
@@ -2344,7 +2367,7 @@ button:focus {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
     .d-none {
         display: block !important;
     }
@@ -2358,7 +2381,7 @@ button:focus {
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 361px) {
     .d-none {
         display: block !important;
     }
@@ -2610,6 +2633,10 @@ button:focus {
         padding: 73px 90px;
     }
 
+    .map-height {
+        height: 100%;
+    }
+
     .contact-us-bg-color {
         padding: 110px 60px 81px 180px;
     }
@@ -2621,7 +2648,7 @@ button:focus {
     }
 }
 
-@media screen and (max-width: 823px) and (orientation: landscape) {
+@media screen and (max-width: 824px) and (orientation: landscape) {
     .d-none {
         display: block !important;
     }
@@ -2639,7 +2666,7 @@ button:focus {
     }
 
     .nav-setting-on-scroll {
-        padding: 10px 26px !important;
+        padding: 0px 26px !important;
     }
 
     .chirst-text {
@@ -2757,7 +2784,7 @@ button:focus {
     }
 
     .belive-bg-color {
-        padding: 28.5px;
+        padding: 28px;
     }
 
     .belive-text {
@@ -2789,8 +2816,9 @@ button:focus {
         font-size: 15px;
     }
 
-    #icons [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
-        padding: 27px 32.8px;
+    #icons .outer-bg-color {
+        width: 100%;
+        height: 65px;
     }
 
     .media-img-height {
@@ -2885,6 +2913,14 @@ button:focus {
     .ml-5 {
         margin-left: .956rem !important;
     }
+
+    .map-height {
+        height: 100%;
+    }
+
+    .logo-display {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 740px) and (orientation: landscape) {
@@ -2900,7 +2936,7 @@ button:focus {
     }
 
     .nav-setting-on-scroll {
-        padding: 10px 26px !important;
+        padding: 0px 26px !important;
     }
 
     .chirst-text {
@@ -3172,7 +3208,7 @@ button:focus {
     }
 }
 
-@media screen and (max-width: 731px) and (orientation: landscape) {
+@media screen and (max-width: 732px) and (orientation: landscape) {
     .d-none {
         display: block !important;
     }
@@ -3182,7 +3218,7 @@ button:focus {
     }
 
     .nav-setting-on-scroll {
-        padding: 10px 26px !important;
+        padding: 0px 26px !important;
     }
 
     .chirst-text {
@@ -3454,13 +3490,13 @@ button:focus {
     }
 }
 
-@media screen and (max-width: 667px) and (orientation: landscape) {
+@media screen and (max-width: 668px) and (orientation: landscape) {
     .d-none {
         display: block !important;
     }
 }
 
-@media screen and (max-width: 640px) and (orientation: landscape) {
+@media screen and (max-width: 641px) and (orientation: landscape) {
     .d-none {
         display: block !important;
     }
@@ -3470,7 +3506,7 @@ button:focus {
     }
 
     .nav-setting-on-scroll {
-        padding: 10px 26px !important;
+        padding: 0px 26px !important;
     }
 
     .chirst-text {
